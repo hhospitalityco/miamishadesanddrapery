@@ -20,8 +20,8 @@
   --grey: #424242;
   --grey-dark: #242424;
   --grey-light: #8f8f8f;
-  --angora: #dfd8bb;
   --terracotta: #8a3b2e;
+  --angora: #dfd8bb;
 }
 
 .w-layout-blockcontainer {
@@ -1006,7 +1006,7 @@ figcaption {
 
 .navbar {
   z-index: 199;
-  background-color: var(--angora);
+  background-color: var(--white);
   color: var(--black);
   position: relative;
   inset: 0% 0% auto;
@@ -1025,6 +1025,7 @@ figcaption {
 .navbar_links {
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
+  background-color: var(--white);
   flex-flow: row;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
@@ -2439,7 +2440,6 @@ figcaption {
 
   .navbar_links {
     z-index: 99;
-    background-color: var(--black);
     justify-content: center;
     align-items: center;
     display: none;
@@ -2551,6 +2551,10 @@ figcaption {
     display: none;
   }
 
+  .navbar_link {
+    padding: .2rem 1rem;
+  }
+
   .work-list_content.black-text {
     color: var(--white);
   }
@@ -2603,6 +2607,10 @@ figcaption {
     flex-flow: column;
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .about_heading {
+    width: 16rem;
   }
 
   .button.hover {
