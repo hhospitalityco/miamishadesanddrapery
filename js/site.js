@@ -29,6 +29,13 @@
     menu.addEventListener("click", function (event) {
       if (event.target.closest("a")) setOpen(false);
     });
+    menu.querySelectorAll(".navbar_dropdown-toggle").forEach(function (button) {
+      button.addEventListener("click", function () {
+        var drop = button.closest(".navbar_dropdown");
+        var open = drop.classList.toggle("is-open");
+        button.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    });
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape") setOpen(false);
     });
